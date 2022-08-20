@@ -1,5 +1,6 @@
-$light-grey: #e1dfdd;
+$light-grey: #f3f0ed;
 $dark-teal: #464c47;
+$text: #232323;
 $black: #000;
 $white: #fff;
 * {
@@ -15,4 +16,47 @@ html {
 }
 body {
   background: $light-grey;
+  color: $text;
+}
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 10rem 0 5rem 0;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 64px;
+  text-align: center;
+  line-height: 1.15;
+}
+.slider {
+  display: flex;
+  justify-items: start;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.swiperx {
+  display: block;
+  position: relative;
+  padding-top: 55%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  & > img {
+    object-fit: cover;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
