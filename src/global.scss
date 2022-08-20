@@ -48,15 +48,22 @@ body {
   }
 }
 
+.next {
+  margin-left: 8px;
+}
+.prev {
+  margin-right: 8px;
+}
+
 .next,
 .prev {
-  background: orange;
+  position: relative;
+  z-index: 10000;
+  background: $white;
   width: 35px;
   height: 35px;
   min-height: 35px;
   min-width: 35px;
-  right: 10px;
-  left: auto;
   display: flex;
   border-radius: 50px;
   align-items: center;
