@@ -50,6 +50,7 @@ export default function Slider() {
         {views.map((item, i) => (
           <SwiperSlide key={i}>
             <div className="swiperx">
+              <h2 className="swiperx__title">Cock</h2>
               <img src={item.url} />
             </div>
           </SwiperSlide>
