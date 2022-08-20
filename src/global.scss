@@ -25,7 +25,29 @@ body {
 }
 
 .header {
-  margin: 8rem 0 4rem 0;
+  margin: 0 0 5rem 0;
+  .studio {
+    margin: 3rem 0 5rem 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    & > h5 {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: -0.02rem;
+      line-height: 1;
+    }
+    & > span {
+      margin-top: 3px;
+      display: block;
+      line-height: 1;
+      font-size: 8px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
 }
 
 .title {
@@ -72,11 +94,24 @@ body {
   justify-content: center;
 }
 .swiperx {
-  &.__title {
+  font-family: "Roboto", sans-serif;
+  &__info {
+    z-index: 100;
     position: absolute;
-    top: 0;
-    color: pink;
-    background: black;
+    top: 1rem;
+    left: 1rem;
+    color: $light-grey;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.02rem;
+    line-height: 1;
+    & > h2 {
+      font-weight: inherit;
+      font-size: inherit;
+    }
+    & > p {
+      margin-top: 5px;
+    }
   }
   display: block;
   position: relative;
@@ -93,4 +128,14 @@ body {
     top: 0;
     left: 0;
   }
+}
+
+.contact {
+  max-width: 911px;
+  width: 100%;
+  margin: 1rem auto;
+  border: 1px solid #c9c7c5;
+  border-radius: 12px;
+  min-height: 200px;
+  background: #ece9e7;
 }

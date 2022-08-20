@@ -12,10 +12,30 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Slider() {
   const views = [
-    { url: Img2, name: "Gloves", link: "" },
-    { url: Img4, name: "Guess", link: "" },
-    { url: Img3, name: "Carrot", link: "" },
-    { url: Img1, name: "Dreams", link: "" },
+    {
+      url: Img2,
+      name: "Good Co. 2.0",
+      stock: "Latest",
+      link: "",
+    },
+    {
+      url: Img4,
+      name: "Fontaine Mystery Deck",
+      stock: "Sold Out",
+      link: "",
+    },
+    {
+      url: Img3,
+      name: "Fontaine Carrots 2.0",
+      stock: "Sold Out",
+      link: "",
+    },
+    {
+      url: Img1,
+      name: "Fever Dreams Deluxe Set",
+      stock: "Available",
+      link: "",
+    },
   ];
   return (
     <div className="slider">
@@ -50,7 +70,10 @@ export default function Slider() {
         {views.map((item, i) => (
           <SwiperSlide key={i}>
             <div className="swiperx">
-              <h2 className="swiperx__title">Cock</h2>
+              <div className="swiperx__info">
+                <h2>{item.name}</h2>
+                <p>{item.stock}</p>
+              </div>
               <img src={item.url} />
             </div>
           </SwiperSlide>

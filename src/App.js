@@ -1,15 +1,24 @@
 import Title from "./components/title";
 import Slider from "./components/slider";
+import Contact from "./components/contact";
 
 function App() {
   return (
     <div className="wrapper">
       <header className="header">
-        <Title>We build beautiful *</Title>
-        <Title>websites and products.</Title>
+        <div className="studio">
+          <h5>Fontaine</h5>
+          <span>Cards</span>
+        </div>
+        <Title>
+          We create culture<span>*</span>
+        </Title>
+        <Title>through playing cards.</Title>
       </header>
 
       <Slider />
+
+      <Contact />
     </div>
   );
 }
