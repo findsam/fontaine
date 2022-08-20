@@ -14,14 +14,18 @@ export default function Slider() {
   ];
   return (
     <div className="slider">
+      <div className="next">1</div>
       <Swiper
         slidesPerView={1}
-        spaceBetween={30}
         loop={true}
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        navigation={{
+          clickable: true,
+          nextEl: ".next",
+          prevEl: ".prev",
+        }}
         modules={[Pagination, Navigation]}
         style={{
           width: "100%",
@@ -38,6 +42,7 @@ export default function Slider() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="prev">2</div>
     </div>
   );
 }
