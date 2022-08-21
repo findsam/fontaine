@@ -56,11 +56,10 @@ body {
 }
 
 .title {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 64px;
   letter-spacing: 0.015rem;
   text-align: center;
-  line-height: 1.15;
   color: $grey1;
   font-family: "Playfair Display", serif;
 }
@@ -158,16 +157,13 @@ body {
   display: flex;
   flex-direction: column;
   color: $grey2;
-  padding: 4rem 2rem 3.5rem 2rem;
-
+  padding: 4rem 2rem 2rem 2rem;
   margin-top: 8px;
-  font-size: 12px;
-  font-weight: 400;
   color: $grey2;
   letter-spacing: -0.01rem;
-
   font-size: 14px;
   font-weight: 500;
+  box-shadow: 0px 8px 12px -6px rgba(0, 0, 0, 0.2);
 }
 
 .btn {
@@ -187,4 +183,25 @@ body {
     transform: scale(1.1);
     box-shadow: 0px 12px 20px -6px rgba(0, 0, 0, 0.5);
   }
+}
+
+.footer {
+  max-width: 911px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 16px auto 5rem auto;
+  background: orange;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  color: $grey2;
+  padding: 4rem 2rem 3.5rem 2rem;
+  margin-top: 8px;
+  color: $grey2;
+  letter-spacing: -0.01rem;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0px 8px 12px -6px rgba(0, 0, 0, 0.2);
 }

@@ -1,3 +1,4 @@
+import Footer from "./components/footer";
 import Title from "./components/title";
 import Slider from "./components/slider";
 import Contact from "./components/contact";
@@ -17,7 +18,7 @@ function App() {
       </header>
       <Slider />
       <Contact />
-      123slakd;fjf sdf sdfsdfsdf sdfsdfsdf
+      <Footer />
     </div>
   );
 }
