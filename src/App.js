@@ -15,10 +15,9 @@ function App() {
         </Title>
         <Title>through playing cards.</Title>
       </header>
-
       <Slider />
-
       <Contact />
+      123slakd;fjf sdf sdfsdfsdf sdfsdfsdf
     </div>
   );
 }

@@ -1,3 +1,9 @@
 export default function Contact() {
-  return <div className="contact">123</div>;
+  return (
+    <div className="contact">
+      <p>Request re-release of your favorite deck?</p>
+      <p style={{ marginBottom: "1rem" }}>We’d love to help.</p>
+      <button className="btn">Say Hello</button>
+    </div>
+  );
 }
