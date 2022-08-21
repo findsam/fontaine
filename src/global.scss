@@ -1,8 +1,11 @@
-$light-grey: #f3f0ed;
-$dark-teal: #464c47;
-$text: #232323;
-$black: #000;
-$white: #fff;
+$bg: #222;
+$inputBg: #333;
+$border: #474747;
+$grey1: #eee;
+$grey2: #aaa;
+$grey3: #777;
+$transp: hsla(0, 0%, 100%, 0.1);
+$dark: #111111;
 * {
   padding: 0;
   margin: 0;
@@ -12,11 +15,11 @@ body,
 html {
   height: 100%;
   width: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 body {
-  background: $light-grey;
-  color: $text;
+  background: $bg;
+  color: $grey1;
 }
 .wrapper {
   max-width: 1200px;
@@ -33,28 +36,32 @@ body {
     font-weight: 400;
     & > h5 {
       font-size: 22px;
-      font-weight: 600;
-      letter-spacing: -0.02rem;
+      font-weight: 400;
+      letter-spacing: 0.015rem;
       line-height: 1;
+      color: $grey2;
     }
     & > span {
-      margin-top: 3px;
+      margin-top: 5px;
       display: block;
       line-height: 1;
       font-size: 8px;
       letter-spacing: 1px;
+      color: $grey2;
       text-transform: uppercase;
       font-weight: 800;
+      letter-spacing: 0.015rem;
     }
   }
 }
 
 .title {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 64px;
-  letter-spacing: -0.02rem;
+  letter-spacing: 0.015rem;
   text-align: center;
   line-height: 1.15;
+  color: $grey1;
   font-family: "Playfair Display", serif;
 }
 .slider {
@@ -66,11 +73,12 @@ body {
   margin: 0 auto 1rem auto;
   max-width: 990px;
   transition: 0.15s cubic-bezier(0.34, 0.53, 0.37, 1.02);
+
   &:hover {
     cursor: pointer;
   }
   .swiper-pagination-bullet {
-    background: $light-grey;
+    background: $grey2;
   }
 }
 
@@ -82,9 +90,10 @@ body {
 }
 .next,
 .prev {
+  font-size: 12px;
+  color: $grey1;
   position: relative;
   z-index: 10000;
-  background: $white;
   width: 32px;
   height: 32px;
   min-height: 32px;
@@ -93,6 +102,8 @@ body {
   border-radius: 50px;
   align-items: center;
   justify-content: center;
+  border: 1px solid $transp;
+  background: $inputBg;
 }
 .swiperx {
   &__info {
@@ -100,20 +111,21 @@ body {
     position: absolute;
     top: 2rem;
     left: 2rem;
-    color: $light-grey;
+    color: $grey1;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1;
+    letter-spacing: 0.015rem;
     & > h2 {
       font-weight: inherit;
       font-size: inherit;
+      color: $grey1;
     }
     & > p {
       margin-top: 8px;
       font-size: 12px;
-      opacity: 0.65;
       font-weight: 400;
-      color: $light-grey;
+      color: $grey2;
     }
   }
   display: block;
@@ -140,28 +152,39 @@ body {
   justify-content: center;
   width: 100%;
   margin: 16px auto 5rem auto;
-  border: 1px solid #c9c7c5;
+  border: 1px solid $transp;
+  background: $inputBg;
   border-radius: 12px;
-  background: #ece9e7;
   display: flex;
   flex-direction: column;
-  margin-top: 8px;
-  color: $text;
-  font-size: 14px;
-  font-weight: 700;
+  color: $grey2;
   padding: 4rem 2rem 3.5rem 2rem;
-  text-align: center;
-  line-height: 1.2;
+
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  color: $grey2;
+  letter-spacing: -0.01rem;
+
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .btn {
   border-radius: 50px;
   border: 0;
   outline: 0;
-  padding: 0.7rem 2rem;
-  background: orange;
-  font-family: "Montserrat", sans-serif;
-  color: $text;
+  padding: 0.65rem 1.6rem;
+  background: $grey1;
+  font-family: inherit;
+  color: $bg;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
+  transition: transform 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6),
+    box-shadow 0.3s ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 12px 20px -6px rgba(0, 0, 0, 0.5);
+  }
 }

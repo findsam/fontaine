@@ -5,7 +5,7 @@ export default function Contact() {
       <p style={{ marginBottom: "1rem", marginTop: ".25rem" }}>
         We’d love to help.
       </p>
-      <button className="btn">Say Hello</button>
+      <button className="btn">Say Hello 👋</button>
     </div>
   );
 }

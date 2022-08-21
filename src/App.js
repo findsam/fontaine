@@ -8,7 +8,7 @@ function App() {
       <header className="header">
         <div className="studio">
           <h5>Fontaine</h5>
-          <span>Cards</span>
+          <span>Studio</span>
         </div>
         <Title>
           We create culture<span>*</span>
