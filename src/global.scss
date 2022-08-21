@@ -12,7 +12,7 @@ body,
 html {
   height: 100%;
   width: 100%;
-  font-family: "Playfair Display", serif;
+  font-family: "Roboto", sans-serif;
 }
 body {
   background: $light-grey;
@@ -30,10 +30,10 @@ body {
     margin: 3rem 0 5rem 0;
     width: 100%;
     text-align: center;
-    font-family: "Roboto", sans-serif;
     font-weight: 400;
     & > h5 {
-      font-size: 20px;
+      // font-family: "Playfair Display", serif;
+      font-size: 22px;
       font-weight: 500;
       letter-spacing: -0.02rem;
       line-height: 1;
@@ -53,8 +53,10 @@ body {
 .title {
   font-weight: 500;
   font-size: 64px;
+  letter-spacing: -0.02rem;
   text-align: center;
   line-height: 1.15;
+  font-family: "Playfair Display", serif;
 }
 .slider {
   display: flex;
@@ -98,8 +100,8 @@ body {
   &__info {
     z-index: 100;
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 2rem;
+    left: 2rem;
     color: $light-grey;
     font-size: 16px;
     font-weight: 400;
@@ -110,7 +112,12 @@ body {
       font-size: inherit;
     }
     & > p {
-      margin-top: 5px;
+      margin-top: 8px;
+      font-size: 12px;
+      opacity: 0.65;
+      font-weight: 300;
+      letter-spacing: -0rem;
+      color: $light-grey;
     }
   }
   display: block;
@@ -132,6 +139,10 @@ body {
 
 .contact {
   max-width: 911px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
   width: 100%;
   margin: 1rem auto;
   border: 1px solid #c9c7c5;

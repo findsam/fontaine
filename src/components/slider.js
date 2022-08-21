@@ -80,7 +80,6 @@ export default function Slider() {
         ))}
       </Swiper>
       <div className="next">
-        {" "}
         <AiOutlineArrowRight
           style={{
             verticalAlign: "middle",
