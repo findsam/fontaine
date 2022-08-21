@@ -196,7 +196,7 @@ body {
   display: flex;
   flex-direction: column;
   color: $grey2;
-  padding: 4rem 2rem 10rem 2rem;
+  padding: 4rem 2rem;
   color: $grey2;
   letter-spacing: -0.01rem;
   font-size: 14px;
@@ -221,7 +221,28 @@ body {
   }
   &__text {
     margin-top: 2rem;
-    &__title {
+    text-align: center;
+    & > h4 {
+      font-size: 22px;
+      font-weight: 400;
+      letter-spacing: 0.015rem;
+      line-height: 1;
+      color: $grey2;
+    }
+    & > h5 {
+      margin-top: 0.5rem;
+      color: $grey2;
+      letter-spacing: -0.01rem;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    & > span {
+      display: block;
+      color: $grey2;
+      letter-spacing: -0.01rem;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 4rem;
     }
   }
 }

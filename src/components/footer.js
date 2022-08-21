@@ -5,7 +5,9 @@ export default function Footer() {
         <div className="footer__image__location"></div>
       </div>
       <div className="footer__text">
-        Based in Los Angeles, California.
+        <h4>Based in Los Angeles, California.</h4>
+        <h5>Global Now, Cards Forever.</h5>
+        <span>© 2022 Fontaine Co.</span>
       </div>
     </div>
   );
