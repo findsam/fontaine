@@ -150,7 +150,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 16px auto 5rem auto;
+  margin: 16px auto 0 auto;
   border: 1px solid $transp;
   background: $inputBg;
   border-radius: 12px;
@@ -191,17 +191,37 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 16px auto 5rem auto;
-  background: orange;
+  margin: 1rem auto 5rem auto;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   color: $grey2;
-  padding: 4rem 2rem 3.5rem 2rem;
-  margin-top: 8px;
+  padding: 4rem 2rem 10rem 2rem;
   color: $grey2;
   letter-spacing: -0.01rem;
   font-size: 14px;
   font-weight: 500;
-  box-shadow: 0px 8px 12px -6px rgba(0, 0, 0, 0.2);
+  &__image {
+    height: 94px;
+    width: 94px;
+    border: 1px solid $transp;
+    border-radius: 50%;
+    background: $dark;
+    position: relative;
+    &__location {
+      position: absolute;
+      right: 0;
+      height: 30px;
+      width: 30px;
+      bottom: 0;
+      border: 1px solid $transp;
+      border-radius: 50%;
+      background: $grey1;
+    }
+  }
+  &__text {
+    margin-top: 2rem;
+    &__title {
+    }
+  }
 }
