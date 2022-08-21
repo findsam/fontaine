@@ -56,6 +56,7 @@ body {
 }
 
 .title {
+  position: relative;
   font-weight: 500;
   font-size: 64px;
   letter-spacing: 0.015rem;
@@ -244,5 +245,62 @@ body {
       font-weight: 500;
       margin-top: 4rem;
     }
+  }
+}
+
+.asterisk {
+  position: absolute;
+  animation: asterisk 1s linear infinite;
+  width: 40px;
+  min-width: 40px;
+  top: 10px;
+  display: inline-flex;
+  justify-items: flex-start;
+  align-items: flex-start;
+  text-align: center;
+  max-width: 40px;
+  max-height: 50px;
+  height: 100%;
+  font-size: 32px;
+}
+@keyframes asterisk {
+  0% {
+    font-family: "Noto Serif HK", serif;
+  }
+  25% {
+    font-family: "Inter", sans-serif;
+  }
+  50% {
+    font-family: "Inspiration", cursive;
+  }
+  75% {
+    font-family: "Mukta", sans-serif;
+  }
+  100% {
+    font-family: "Noto Serif JP", serif;
+  }
+}
+
+.draw {
+  position: relative;
+}
+
+.x {
+  position: absolute;
+  display: block;
+  width: 120%;
+  height: 120%;
+  bottom: -18px;
+  left: -10px;
+  z-index: -1;
+  transform: rotate(8deg);
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  animation: draw 0.3s ease-in forwards;
+}
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
   }
 }
