@@ -2,7 +2,7 @@ import Footer from "./components/footer";
 import Title from "./components/title";
 import Slider from "./components/slider";
 import Contact from "./components/contact";
-
+import Ast from "./components/ast";
 function App() {
   return (
     <div className="wrapper">
@@ -25,13 +25,11 @@ function App() {
               <path
                 d="M55 26C13 49 -40 91 76.0005 80.5C226.956 65.0308 345 30.6395 281 11.0050C200 -9 85 0 1.5 40"
                 stroke="#32bd64"
-                stroke-width="2"
+                strokeWidth="2"
               ></path>
             </svg>
           </span>
-          <span className="asterisk">
-            <span>*</span>
-          </span>
+          <Ast />
         </Title>
         <Title>through playing cards.</Title>
       </header>
