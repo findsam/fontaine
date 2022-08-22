@@ -1,5 +1,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+import SwiperCore, {
+  Pagination,
+  Navigation,
+  Autoplay,
+} from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -37,6 +41,7 @@ export default function Slider() {
       link: "",
     },
   ];
+
   return (
     <div className="slider">
       <div className="prev">
@@ -49,8 +54,13 @@ export default function Slider() {
       </div>
 
       <Swiper
+        modules={[Autoplay, Pagination, Navigation]}
         slidesPerView={1}
         loop={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
@@ -59,7 +69,6 @@ export default function Slider() {
           nextEl: ".next",
           prevEl: ".prev",
         }}
-        modules={[Pagination, Navigation]}
         style={{
           width: "100%",
           height: "100%",
