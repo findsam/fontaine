@@ -12,6 +12,7 @@ import Img1 from "../assets/1.jpg";
 import Img2 from "../assets/2.png";
 import Img3 from "../assets/3.jpg";
 import Img4 from "../assets/4.png";
+import Img5 from "../assets/5.jpeg";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 export default function Slider() {
@@ -37,6 +38,12 @@ export default function Slider() {
     {
       url: Img1,
       name: "Fever Dreams Deluxe Set",
+      stock: "Available",
+      link: "",
+    },
+    {
+      url: Img5,
+      name: "Fontaine Pinks",
       stock: "Available",
       link: "",
     },
