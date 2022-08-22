@@ -1,8 +1,6 @@
 import { useState } from "react";
 export default function Ast() {
   const [visible, setVisible] = useState(false);
-  console.log(visible);
-
   return (
     <>
       <span

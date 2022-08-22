@@ -15,6 +15,7 @@ body,
 html {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
   font-family: "Inter", sans-serif;
 }
 body {
@@ -23,6 +24,7 @@ body {
 }
 .wrapper {
   max-width: 1200px;
+  padding: 0 1.5rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -35,7 +37,7 @@ body {
     text-align: center;
     font-weight: 400;
     & > h5 {
-      font-size: 22px;
+      font-size: 14px;
       font-weight: 600;
       letter-spacing: 0.015rem;
       line-height: 1;
@@ -65,6 +67,12 @@ body {
   text-align: center;
   color: $grey1;
   font-family: "Playfair Display", serif;
+  @media (max-width: 990px) {
+    font-size: 54px;
+  }
+  @media (max-width: 550px) {
+    font-size: 34px;
+  }
 }
 .slider {
   display: flex;
@@ -92,6 +100,9 @@ body {
 }
 .next,
 .prev {
+  @media (max-width: 990px) {
+    display: none;
+  }
   font-size: 12px;
   color: $grey1;
   position: relative;
@@ -170,7 +181,9 @@ body {
 }
 
 .btn {
+  text-decoration: none;
   border-radius: 50px;
+  will-change: transform;
   border: 0;
   outline: 0;
   padding: 0.65rem 1.6rem;
@@ -356,6 +369,12 @@ body {
   stroke-dasharray: 700;
   stroke-dashoffset: 700;
   animation: draw 0.3s ease-in forwards;
+  @media (max-width: 550px) {
+    bottom: -7px;
+    width: 115%;
+    height: 115%;
+    left: -8px;
+  }
 }
 
 @keyframes draw {
