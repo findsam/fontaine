@@ -3,6 +3,8 @@
 > This is fully fledge studio display design built for Fontaine Studios. A card
 > company based in Califonia.
 
+![image](https://i.imgur.com/Crxp5qM.png)
+
 #### Overview:
 
 - `Components/` - Reusable components.
